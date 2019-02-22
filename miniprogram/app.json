@@ -1,7 +1,7 @@
 {
   "pages": [
-    "pages/translate/folding/folding",
-    "pages/index/index"
+    "pages/index/index",
+    "pages/translate/folding/folding"
   ],
   "window": {
     "backgroundTextStyle": "light",
