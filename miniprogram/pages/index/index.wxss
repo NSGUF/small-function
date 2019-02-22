@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}
+
+.container .btn {
+  text-align: center;
+  height: 80rpx;
+  border-radius: 10rpx;
+  background: #1890ff;
+  color: #ffffff;
+  width: 325rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  display: block;
+  border-color: #1890ff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.045);
+}

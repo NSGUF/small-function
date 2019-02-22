@@ -1,0 +1,11 @@
+<!--pages/translate/folding/folding.wxml-->
+<view class='folding' wx:for="{{listData}}" wx:for-index="index" wx:for-item='item'>
+  <view class='content'>
+    <view class='title' bindtap='clickChangeStatus' data-id='{{item.id}}'>
+      <view class='name'>{{item.name}}</view>
+    </view>
+    <view class='child {{item.isShow?"":"none"}}' style="height:{{item.childList.length%3==0?item.childList.length*100/3:item.childList.length%3==1?(item.childList.length+2)*100/3:(item.childList.length+1)*100/3}}rpx">
+      <view class='child-btn' wx:for="{{item.childList}}" wx:for-index="childIndex" wx:for-item='childItem'>{{childItem.name}}</view>
+    </view>
+  </view>
+</view>
