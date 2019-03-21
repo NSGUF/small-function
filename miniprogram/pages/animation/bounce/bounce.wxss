@@ -1,0 +1,69 @@
+.guide .guide-mask {
+  top: 0;
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.guide .guide-content {
+  position: fixed;
+  bottom: 100rpx;
+  z-index: 101;
+  width: 100%;
+}
+
+.guide .guide-content .guide-context {
+  margin: 0 auto;
+  width: 660rpx;
+  height: 88rpx;
+  line-height: 88rpx;
+  background: #ffffff;
+  text-align: center;
+  border-radius: 10rpx;
+}
+
+.guide .guide-content .animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+@keyframes bounceOutUp {
+  0% {
+    transform: translateY(0);
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(20rpx);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-1300rpx);
+  }
+}
+
+.guide .guide-content .bounceOutUp {
+  animation-name: bounceOutUp;
+}
+
+@keyframes bounceInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-1300rpx);
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(30rpx);
+  }
+  80% {
+    transform: translateY(-10rpx);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.guide .guide-content .bounceInDown {
+  animation-name: bounceInDown;
+}

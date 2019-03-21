@@ -11,7 +11,6 @@ taskSass = () => {
 
 };
 gulp.task("sass", () => {
-    // 记得return，否者会卡在这个地方，无法执行下一次监听的回调
     return gulp.src("./miniprogram/**/*.scss", {"base": ''})
         .pipe(sass({outputStyle: 'expanded'}).on('error', sass.logError))
         .pipe(rename({

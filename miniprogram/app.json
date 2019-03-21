@@ -1,6 +1,7 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/animation/bounce/bounce",
     "pages/translate/folding/folding"
   ],
   "window": {

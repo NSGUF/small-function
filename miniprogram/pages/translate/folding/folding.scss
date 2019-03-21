@@ -15,13 +15,12 @@
     }
 
     .child{
-      transition:all 0.3s ease-out 0s;
+      transition:height 0.3s ease-out 0s;
       display:flex;
       justify-content:space-between;
       flex-flow:row wrap;
-      margin-bottom:20rpx;
       overflow:hidden;
-
+      margin-bottom:20rpx;
 
       .child-btn{
         text-align:center;
@@ -31,10 +30,13 @@
         color:#555;
         width:210rpx;
         line-height:80rpx;
-        margin-top:20rpx;
         font-size:26rpx;
       }
     }
+    .child::after {
+       content: "";
+       width: 210rpx;
+     }
     .none{
       height: 0!important;
       overflow: hidden;

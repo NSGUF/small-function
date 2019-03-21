@@ -13,37 +13,17 @@ Page({
         name: "子菜单二"
       }, {
         name: "子菜单三"
-        }, {
-          name: "子菜单一"
-        }, {
-          name: "子菜单二"
-        }, {
-          name: "子菜单三"
-        }, {
-          name: "子菜单一"
-        }, {
-          name: "子菜单二"
-        }, {
-          name: "子菜单三"
-        }, {
-          name: "子菜单一"
-        }, {
-          name: "子菜单二"
-        }, {
-          name: "子菜单三"
-        }, {
-          name: "子菜单一"
-        }, {
-          name: "子菜单二"
-        }, {
-          name: "子菜单三"
-        }, {
-          name: "子菜单一"
-        }, {
-          name: "子菜单二"
-        }, {
-          name: "子菜单三"
-        },]
+      }, {
+        name: "子菜单一"
+      }, {
+        name: "子菜单二"
+      }, {
+        name: "子菜单三"
+      }, {
+        name: "子菜单一"
+      }, {
+        name: "子菜单二"
+      }]
     }, {
       name: "菜单二",
       childList: [{
@@ -52,33 +32,31 @@ Page({
         name: "子菜单二"
       }, {
         name: "子菜单三"
-        }, {
-          name: "子菜单一"
-        }, {
-          name: "子菜单二"
-        }, {
-          name: "子菜单三"
-        }, {
-          name: "子菜单一"
-        }, {
-          name: "子菜单二"
-        }, {
-          name: "子菜单三"
-        }, {
-          name: "子菜单一"
-        }, {
-          name: "子菜单二"
-        }, {
-          name: "子菜单三"
-        }]
+      }, {
+        name: "子菜单一"
+      }, {
+        name: "子菜单二"
+      }, {
+        name: "子菜单三"
+      }, {
+        name: "子菜单一"
+      }, {
+        name: "子菜单二"
+      }, {
+        name: "子菜单三"
+      }, {
+        name: "子菜单一"
+      }, {
+        name: "子菜单二"
+      }, {
+        name: "子菜单三"
+      }]
     }, {
       name: "菜单三",
       childList: [{
         name: "子菜单一"
       }, {
         name: "子菜单二"
-      }, {
-        name: "子菜单三"
       }]
     }]
   },
@@ -89,11 +67,11 @@ Page({
   onLoad: function(options) {
 
     // 通常从数据库获取的数据是没有处理的，这里处理一下
-    let listData=this.data.listData
-    let id=0;
-    for(let i=0;i<listData.length;i++){
-      listData[i].id=id++;
-      listData[i].isShow=false;
+    let listData = this.data.listData
+    let id = 0;
+    for (let i = 0; i < listData.length; i++) {
+      listData[i].id = id++;
+      listData[i].isShow = false;
     }
     this.setData({
       listData
@@ -148,13 +126,13 @@ Page({
   onShareAppMessage: function() {
 
   },
-  clickChangeStatus:function(e){
-    let id=e.currentTarget.dataset.id;
+  clickChangeStatus: function(e) {
+    let id = e.currentTarget.dataset.id;
     console.log(id)
-    const listData=this.data.listData;
-    for(let i=0;i<listData.length;i++){
-      if(listData[i].id===id){
-        listData[i].isShow=!listData[i].isShow
+    const listData = this.data.listData;
+    for (let i = 0; i < listData.length; i++) {
+      if (listData[i].id === id) {
+        listData[i].isShow = !listData[i].isShow
       }
     }
     this.setData({

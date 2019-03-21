@@ -1,0 +1,11 @@
+<!--pages/animation/bounce/bounce.wxml-->
+<view>各种效果在这里替换animation：
+<view>https://coveloping.com/tools/css-animation-generator 可能要翻墙</view></view>
+<view class='guide' wx:if='{{isShowGuide}}'>
+    <view class='guide-mask' catchtouchmove="move" bind:tap="closeGuide"></view>
+    <view class='guide-content'>
+      <view class="guide-context {{isShowGuideAnimation?'animated bounceInDown':'animated bounceOutUp'}}">
+        提示信息
+      </view>
+    </view>
+  </view>

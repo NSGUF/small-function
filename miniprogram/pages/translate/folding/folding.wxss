@@ -17,12 +17,12 @@
 }
 
 .folding .content .child {
-  transition: all 0.3s ease-out 0s;
+  transition: height 0.3s ease-out 0s;
   display: flex;
   justify-content: space-between;
   flex-flow: row wrap;
-  margin-bottom: 20rpx;
   overflow: hidden;
+  margin-bottom: 20rpx;
 }
 
 .folding .content .child .child-btn {
@@ -33,8 +33,12 @@
   color: #555;
   width: 210rpx;
   line-height: 80rpx;
-  margin-top: 20rpx;
   font-size: 26rpx;
+}
+
+.folding .content .child::after {
+  content: "";
+  width: 210rpx;
 }
 
 .folding .content .none {

@@ -1,4 +1,5 @@
 <!--index.wxml-->
 <view class="container">
   <navigator url='/pages/translate/folding/folding' class='btn'>折叠展开</navigator>
+  <navigator url='/pages/animation/bounce/bounce' class='btn'>提示框</navigator>
 </view>
